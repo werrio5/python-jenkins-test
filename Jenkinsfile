@@ -12,7 +12,6 @@ pipeline {
             steps {
                 echo 'Testing...'
                 sh 'python3 test_main.py'
-                sh 'coverage run -m unittest discover'
             }
         }
         stage('Deploy') {
