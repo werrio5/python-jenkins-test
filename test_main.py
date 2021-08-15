@@ -6,6 +6,7 @@ class Main_test(unittest.TestCase):
         main = Main()
         self.assertEqual(main.hello(), 'hello world!')
 
+    @unittest.expectedFailure
     def test_fail(self):
         self.assertTrue(False)
         
